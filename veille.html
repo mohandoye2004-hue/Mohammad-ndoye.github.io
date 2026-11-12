@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Veille Technologique - Portfolio Mohammad Ndoye</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00Bfa5;
+            --dark-bg: #1e1e1e;
+            --section-bg-alt: #252525;
+            --card-bg: #2d2d2d;
+            --text-main: #f0f0f0;
+            --text-secondary: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        
+        /* Header */
+        header {
+            position: fixed; top: 0; width: 100%; background-color: rgba(30, 30, 30, 0.98);
+            padding: 15px 40px; display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 2px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 1.2rem; }
+        .logo span { color: var(--primary-color); }
+        nav ul { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+
+        /* Sections */
+        section { padding: 120px 10% 80px 10%; min-height: 100vh; }
+        .section-title { margin-bottom: 40px; text-align: center; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+        .section-title span { display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto; }
+        
+        /* Grid Layout */
+        .veille-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        @media (max-width: 900px) {
+            .veille-container { grid-template-columns: 1fr; }
+        }
+
+        /* Cards */
+        .card { background: var(--card-bg); padding: 25px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); border-left: 4px solid var(--primary-color); margin-bottom: 25px; }
+        .card h3 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; margin-bottom: 15px; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .card h3 i { color: var(--primary-color); }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 10px; }
+        
+        /* Tags for tools */
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag { background: #1e1e1e; color: var(--primary-color); font-size: 0.85rem; padding: 6px 12px; border-radius: 4px; border: 1px solid #444; font-weight: 600; }
+
+        /* Articles Timeline */
+        .article-card { background: var(--section-bg-alt); padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 3px solid #555; transition: 0.3s; }
+        .article-card:hover { border-left-color: var(--primary-color); background: #2a2a2a; }
+        .article-meta { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--primary-color); font-weight: bold; margin-bottom: 8px; text-transform: uppercase; }
+        .article-title { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 10px; font-weight: 700; }
+        .article-desc { color: var(--text-secondary); font-size: 0.9rem; }
+        .article-source { color: #888; font-style: italic; margin-top: 10px; font-size: 0.85rem; display: block; }
+
+        footer { text-align: center; padding: 30px; background: #050505; font-size: 0.8rem; color: #666; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mohammad <span>Ndoye</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="e5.html">Épreuve E5</a></li>
+                <li><a href="e6.html">Épreuve E6</a></li>
+                <li><a href="veille.html" class="active">Veille</a></li>
+                <li><a href="identite-numerique.html">Identité Numérique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-title">
+            <h2>Veille Technologique</h2>
+            <p style="color: #888; font-size: 1.1rem;">L'évolution des infrastructures face aux cybermenaces</p>
+            <span></span>
+        </div>
+
+        <div class="veille-container">
+            <!-- Colonne Gauche : Thème et Outils -->
+            <div class="sidebar">
+                <div class="card">
+                    <h3><i class="material-icons">policy</i> Mon Sujet de Veille</h3>
+                    <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem;">La sauvegarde immuable : L'ultime rempart contre les ransomwares</h4>
+                    <p>
+                        Face à l'explosion des ransomwares (logiciels de rançon) qui ciblent désormais les serveurs de sauvegarde des entreprises pour empêcher toute restauration, les stratégies classiques (sauvegarde sur disque réseau) ne suffisent plus.
+                    </p>
+                    <p>
+                        Mon sujet porte sur le concept de <strong>Sauvegarde Immuable (WORM - Write Once Read Many)</strong> : un système où la donnée stockée ne peut être ni modifiée ni supprimée pendant une durée définie, même par un administrateur réseau ayant les droits maximums.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="material-icons">radar</i> Mes Outils & Sources</h3>
+                    <p>Pour me tenir informé des dernières failles et des évolutions des technologies de sauvegarde, j'utilise un système d'agrégation de flux RSS et des alertes ciblées :</p>
+                    <div class="tags">
+                        <span class="tag"><i class="material-icons" style="font-size: 14px; vertical-align: middle;">rss_feed</i> Feedly</span>
+                        <span class="tag">Google Alertes</span>
+                        <span class="tag">CERT-FR (ANSSI)</span>
+                        <span class="tag">Le Mag IT</span>
+                        <span class="tag">ZATAZ</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="material-icons">chat</i> Pourquoi ce choix ?</h3>
+                    <p>
+                        En tant que futur administrateur systèmes et réseaux (SISR), la disponibilité de la donnée est ma priorité absolue. Lors de mon stage chez LC NETSECURE, j'ai manipulé <strong>Barracuda Cloud Backup</strong>. J'ai compris que posséder des sauvegardes est inutile si le pirate informatique peut y accéder pour les détruire. La sauvegarde immuable est donc devenue le standard technique incontournable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colonne Droite : Flux d'articles -->
+            <div class="main-content">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; margin-bottom: 20px; color: #fff; display: flex; align-items: center; gap: 10px;">
+                    <i class="material-icons" style="color: var(--primary-color);">article</i> Synthèse des derniers articles
+                </h3>
+
+                <!-- Article 1 -->
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span>Cyber-résilience</span>
+                        <span>Avril 2026</span>
+                    </div>
+                    <div class="article-title">Nouvelle directive NIS2 : L'ANSSI durcit le ton sur la protection des sauvegardes</div>
+                    <div class="article-desc">
+                        Suite à l'application de la directive européenne NIS2, les entreprises considérées comme entités essentielles doivent prouver la résilience de leur infrastructure. L'ANSSI recommande fortement la mise en place de sauvegardes déconnectées ou immuables (air-gap logique ou physique) pour isoler les données critiques des réseaux de production.
+                    </div>
+                    <span class="article-source">Source : CERT-FR / ANSSI - Bulletin de sécurité</span>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span>Évolution Technologique</span>
+                        <span>Février 2026</span>
+                    </div>
+                    <div class="article-title">Le stockage objet (S3 Object Lock) démocratise l'immuabilité pour les PME</div>
+                    <div class="article-desc">
+                        Autrefois réservée aux grandes infrastructures avec des baies de stockage hors de prix, l'immuabilité devient accessible. La technologie "Object Lock", popularisée par le standard Amazon S3 et intégrée par des solutions comme Veeam ou Barracuda, permet désormais aux PME de verrouiller leurs données directement dans le Cloud ou sur des NAS locaux de manière inviolable pendant 30 ou 60 jours.
+                    </div>
+                    <span class="article-source">Source : Le Mag IT - Dossier Cloud & Stockage</span>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card">
+                    <div class="article-meta">
+                        <span>Analyse de menace</span>
+                        <span>Novembre 2025</span>
+                    </div>
+                    <div class="article-title">Ransomwares 3.0 : Quand les pirates s'attaquent d'abord aux hyperviseurs (VMware/Hyper-V)</div>
+                    <div class="article-desc">
+                        Les cybercriminels ne ciblent plus poste par poste. Les nouvelles souches de ransomwares s'attaquent directement au cœur de l'infrastructure en compromettant les serveurs de virtualisation (vCenter) pour chiffrer toutes les machines virtuelles simultanément, ainsi que les serveurs de backup connectés au même domaine Active Directory.
+                    </div>
+                    <span class="article-source">Source : ZDNet France - Cybersécurité</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohammad Ndoye - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
