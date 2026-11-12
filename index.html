@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Accueil - Portfolio Mohammad Ndoye</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00Bfa5;
+            --dark-bg: #1e1e1e;
+            --text-main: #f0f0f0;
+            --text-secondary: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed; top: 0; width: 100%; background-color: rgba(30, 30, 30, 0.98);
+            padding: 15px 40px; display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 2px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 1.2rem; }
+        .logo span { color: var(--primary-color); }
+        nav ul { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+
+        /* Hero Section */
+        .hero {
+            flex: 1;
+            padding: 180px 10% 80px 10%;
+            background: linear-gradient(135deg, #1e1e1e 0%, #252525 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+        }
+        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+        .hero h1 span { color: var(--primary-color); }
+        .hero p.subtitle { font-size: 1.4rem; color: var(--primary-color); font-weight: 600; margin-bottom: 25px; }
+        .hero p.description { max-width: 800px; color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8; }
+        
+        .btn-cv {
+            display: inline-flex; align-items: center; gap: 10px; background-color: var(--primary-color);
+            color: #111; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700;
+            padding: 15px 30px; border-radius: 5px; text-transform: uppercase; letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0, 191, 165, 0.3); transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-cv:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 191, 165, 0.5); color: #000; }
+
+        footer { text-align: center; padding: 30px; background: #050505; font-size: 0.8rem; color: #666; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mohammad <span>Ndoye</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="e5.html">Épreuve E5</a></li>
+                <li><a href="e6.html">Épreuve E6</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="identite-numerique.html">Identité Numérique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Mohammad <span>Ndoye</span></h1>
+        <p class="subtitle">BTS SIO SISR — Systèmes & Réseaux</p>
+        <p class="description">
+            Étudiant en 2<sup>e</sup> année de BTS SIO (SISR) à Ynov Campus. Fort d'expériences en gestion de parc, sécurité et support technique, je recherche un stage (du 23 nov. au 22 déc.) ou une alternance (rythme : 3j entreprise / 2j école) pour mettre mes compétences en infrastructure au service de votre entreprise.
+        </p>
+        <a href="CV Mohammad Ndoye.pdf" target="_blank" class="btn-cv">
+            <i class="material-icons">picture_as_pdf</i> Télécharger mon CV
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohammad Ndoye - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
