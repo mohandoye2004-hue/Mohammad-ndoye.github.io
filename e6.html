@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Épreuve E6 - Portfolio Mohammad Ndoye</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00Bfa5;
+            --dark-bg: #1e1e1e;
+            --section-bg-alt: #252525;
+            --card-bg: #2d2d2d;
+            --text-main: #f0f0f0;
+            --text-secondary: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        header {
+            position: fixed; top: 0; width: 100%; background-color: rgba(30, 30, 30, 0.98);
+            padding: 15px 40px; display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 2px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--primary-color); }
+        nav ul { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+        section { padding: 120px 10% 80px 10%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .section-title { margin-bottom: 40px; text-align: center; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+        .section-title span { display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto; }
+        footer { text-align: center; padding: 30px; background: #050505; font-size: 0.8rem; color: #666; }
+        .btn { padding: 10px 20px; background: var(--primary-color); color: #fff; border-radius: 4px; font-weight: 600; display: inline-block; text-align: center; transition: 0.3s; }
+        .btn:hover { background: #008e7b; }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Mohammad <span>Ndoye</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="e5.html">Épreuve E5</a></li>
+                <li><a href="e6.html" class="active">Épreuve E6</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="identite-numerique.html">Identité Numérique</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="section-title">
+            <h2>Épreuve E6 - Présentation de Projet</h2>
+            <p style="color: #888;">Détail du projet professionnel présenté au jury</p>
+            <span></span>
+        </div>
+        
+        <div style="background: var(--card-bg); padding: 40px; border-radius: 8px; border-top: 4px solid var(--primary-color); max-width: 900px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <h3 style="color: #fff; margin-bottom: 25px; font-size: 1.8rem; text-align: center;">Titre de votre Projet</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                        <i class="material-icons">business</i> Contexte
+                    </h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        [Décrivez ici le contexte de l'entreprise ou de la situation professionnelle. Exemple : Refonte de l'infrastructure réseau pour une PME.]
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                        <i class="material-icons">flag</i> Objectifs
+                    </h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        [Quels étaient les buts à atteindre ? Exemple : Assurer la haute disponibilité des services, sécuriser les accès distants, etc.]
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                        <i class="material-icons">build</i> Technologies utilisées
+                    </h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        [Lister les technos : Windows Server, Linux Debian, Active Directory, pfSense, GLPI, etc.]
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                        <i class="material-icons">check_circle</i> Résultats & Bilan
+                    </h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        [Ce que le projet a apporté et les compétences SISR que vous avez pu valider à travers cette expérience.]
+                    </p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #444;">
+                <a href="#" class="btn" style="padding: 12px 25px; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="material-icons">picture_as_pdf</i> Télécharger le dossier de Projet
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 Mohammad Ndoye - Tous droits réservés</p></footer>
+</body>
+</html>

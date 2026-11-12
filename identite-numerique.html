@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Identité Numérique - Portfolio Mohammad Ndoye</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00Bfa5;
+            --dark-bg: #1e1e1e;
+            --section-bg-alt: #252525;
+            --card-bg: #2d2d2d;
+            --text-main: #f0f0f0;
+            --text-secondary: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        header {
+            position: fixed; top: 0; width: 100%; background-color: rgba(30, 30, 30, 0.98);
+            padding: 15px 40px; display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 2px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--primary-color); }
+        nav ul { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+        section { padding: 120px 10% 80px 10%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .section-title { margin-bottom: 40px; text-align: center; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+        .section-title span { display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--card-bg); padding: 30px; border-radius: 8px; border-top: 4px solid var(--primary-color); transition: 0.3s; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .card h3 { margin-bottom: 15px; font-size: 1.3rem; color: #fff; }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px; }
+        .btn { padding: 10px 20px; background: var(--primary-color); color: #fff; border-radius: 4px; font-weight: 600; display: inline-block; text-align: center; }
+        .btn:hover { background: #008e7b; }
+        footer { text-align: center; padding: 30px; background: #050505; font-size: 0.8rem; color: #666; }
+        
+        .table-container { background: var(--card-bg); padding: 20px; border-radius: 8px; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
+        th { background: #111; color: var(--primary-color); padding: 15px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; border-bottom: 2px solid var(--primary-color); }
+        td { padding: 12px 15px; border-bottom: 1px solid #444; }
+        tr:hover { background-color: #333; }
+        .comp-check { text-align: center; color: var(--primary-color); font-weight: bold; font-size: 1.1rem; }
+        .doc-link { color: var(--text-secondary); }
+        .doc-link:hover { color: var(--primary-color); }
+        
+        .skills-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; background: #1a1a1a; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-color); }
+        .skills-legend p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+        .skills-legend strong { color: #fff; }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Mohammad <span>Ndoye</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="e5.html">Épreuve E5</a></li>
+                <li><a href="e6.html">Épreuve E6</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="identite-numerique.html" class="active">Identité Numérique</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section style="text-align: center;">
+        <div class="section-title">
+            <h2>Identité Numérique</h2>
+            <span></span>
+        </div>
+        <div class="card" style="max-width: 600px; margin: 0 auto; padding: 40px;">
+            <p style="margin-bottom: 25px; color: var(--text-secondary); font-size: 1.05rem;">Retrouvez mes coordonnées professionnelles :</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 30px;">
+                <a href="mailto:moha.ndoye2004@gmail.com" class="doc-link" style="font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="material-icons">email</i> moha.ndoye2004@gmail.com
+                </a>
+                <p style="font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="material-icons" style="color: var(--primary-color);">phone</i> 06 68 05 62 90
+                </p>
+                <p style="font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="material-icons" style="color: var(--primary-color);">location_on</i> 71, Rue Sadi Carnot, 92000 Nanterre
+                </p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/mohammad-ndoye-04aa96282/" target="_blank" class="btn" style="background: #0077b5; border: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 25px; font-size: 1rem; box-shadow: 0 4px 10px rgba(0, 119, 181, 0.3);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                Mon Profil LinkedIn
+            </a>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 Mohammad Ndoye - Tous droits réservés</p></footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Épreuve E5 - Portfolio Mohammad Ndoye</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700|Montserrat:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00Bfa5;
+            --dark-bg: #1e1e1e;
+            --section-bg-alt: #252525;
+            --card-bg: #2d2d2d;
+            --text-main: #f0f0f0;
+            --text-secondary: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        header {
+            position: fixed; top: 0; width: 100%; background-color: rgba(30, 30, 30, 0.98);
+            padding: 15px 40px; display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 2px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--primary-color); }
+        nav ul { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
+        section { padding: 120px 10% 80px 10%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .section-title { margin-bottom: 40px; text-align: center; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+        .section-title span { display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 0 auto; }
+        footer { text-align: center; padding: 30px; background: #050505; font-size: 0.8rem; color: #666; }
+        
+        .table-container { background: var(--card-bg); padding: 20px; border-radius: 8px; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
+        th { background: #111; color: var(--primary-color); padding: 15px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; border-bottom: 2px solid var(--primary-color); }
+        td { padding: 12px 15px; border-bottom: 1px solid #444; }
+        tr:hover { background-color: #333; }
+        .comp-check { text-align: center; color: var(--primary-color); font-weight: bold; font-size: 1.1rem; }
+        .doc-link { color: var(--text-secondary); font-size: 0.85rem; }
+        .doc-link:hover { color: var(--primary-color); text-decoration: underline; }
+        
+        .skills-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; background: #1a1a1a; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-color); }
+        .skills-legend p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+        .skills-legend strong { color: #fff; }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Mohammad <span>Ndoye</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="e5.html" class="active">Épreuve E5</a></li>
+                <li><a href="e6.html">Épreuve E6</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="identite-numerique.html">Identité Numérique</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="section-title">
+            <h2>Épreuve E5 & Synthèse</h2>
+            <p style="color: #888;">Tableau récapitulatif des réalisations professionnelles (Session 2026/2027)</p>
+            <span></span>
+        </div>
+        
+        <div class="skills-legend">
+            <p><strong>C1</strong> : Gérer le patrimoine informatique</p>
+            <p><strong>C2</strong> : Répondre aux incidents et demandes</p>
+            <p><strong>C3</strong> : Développer la présence en ligne</p>
+            <p><strong>C4</strong> : Travailler en mode projet</p>
+            <p><strong>C5</strong> : Mettre à disposition un service info</p>
+            <p><strong>C6</strong> : Organiser son développement pro</p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nom de la réalisation</th>
+                        <th>Description de l'activité</th>
+                        <th>Technologies & Outils</th>
+                        <th style="text-align:center;">C1</th>
+                        <th style="text-align:center;">C2</th>
+                        <th style="text-align:center;">C3</th>
+                        <th style="text-align:center;">C4</th>
+                        <th style="text-align:center;">C5</th>
+                        <th style="text-align:center;">C6</th>
+                        <th style="text-align:center;">Document (PDF)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Déploiement Serveur Web Apache2</td>
+                        <td>Mise en place et sécurisation d'un serveur web (Virtual Hosts, HTTPS, FPM/FastCGI).</td>
+                        <td>Debian, Apache2, OpenSSL, PHP</td>
+                        <td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="apache23.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> apache23.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Annuaire Active Directory (Sitka)</td>
+                        <td>Centralisation des ressources et accès, architecture multisite, stratégies (GPO).</td>
+                        <td>Windows Server 2019, AD DS</td>
+                        <td class="comp-check">✔</td><td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="E5 Active directory_sitka.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> E5 Active directory_sitka.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Accès à distance sécurisé SSH</td>
+                        <td>Administration distante sécurisée (clés asymétriques, Google 2FA).</td>
+                        <td>Linux, SSH, PuTTY, WinSCP</td>
+                        <td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="E5 glpi_sitka.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> E5 glpi_sitka.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Passerelle et Pare-feu pfSense</td>
+                        <td>Déploiement d'un pare-feu/routeur, interfaces (WAN, LAN, OPT1) et DHCP.</td>
+                        <td>pfSense, FreeBSD, VMware</td>
+                        <td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="1-installation pfsense.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> 1-installation pfsense.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Gestion Avancée du Stockage</td>
+                        <td>Redondance et allocation dynamique de stockage (RAID 1/6, LVM, snapshots).</td>
+                        <td>Linux, mdadm, LVM, ext4</td>
+                        <td class="comp-check">✔</td><td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="disque.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> disque.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Interopérabilité et Migration</td>
+                        <td>Intégration Linux sous Windows (WSL) et montée de version majeure (Debian).</td>
+                        <td>Windows 10, WSL, Debian</td>
+                        <td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">✔</td>
+                        <td style="text-align:left;"><a href="WSL.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> WSL.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Équipements Réseau Cisco</td>
+                        <td>VLANs, Routage inter-VLAN, Spanning-Tree, Etherchannel, ACLs.</td>
+                        <td>Cisco IOS, Switch, Routeur</td>
+                        <td class="comp-check">✔</td><td class="comp-check">✔</td><td class="comp-check">-</td><td class="comp-check">-</td><td class="comp-check">✔</td><td class="comp-check">-</td>
+                        <td style="text-align:left;"><a href="Composants internes.pdf" target="_blank" class="doc-link" style="display:flex; align-items:center; gap:5px;"><i class="material-icons" style="font-size: 18px;">picture_as_pdf</i> Composants internes.pdf</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 Mohammad Ndoye - Tous droits réservés</p></footer>
+</body>
+</html>
